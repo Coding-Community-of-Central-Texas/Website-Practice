@@ -1,69 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Landing Page</title>
-
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titan+One&display=swap" rel="stylesheet" />
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/mdb.min.css" />
-  </head>
-  <body style="margin: 0; padding: 0; height: 100vh; font-family: Arial, sans-serif">
-    <section class="header">
-      <nav>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Blog Lists</a></li>
-            <li><a href="/">Socials</a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
-    </section>
-
-    <div style="position: relative; width: 100%; height: 100vh; overflow: hidden">
-      <div class="right-block">
-        <img
-          id="spinImg"
-          src="images/OSCCCT Logo transparent.png"
-          alt="Landing Visual"
-          class="grow-on-load"
-        />
-      </div>
-      <div class="left-block">
-        <div class="landing-text-wrapper" style="font-size: 30px;">
-        <strong style="margin:0 0 0.5em 0; font-size: 85px;">
-          <span class="letter">O</span>
-          <span class="letter">S</span>
-          <span class="letter">C</span>
-          <span class="letter">C</span>
-          <span class="letter">C</span>
-          <span class="letter">T</span>
-         <!-- <span class="letter">&nbsp;</span>-->
-        </strong>
-        <p style="font-size:1.25em; margin:0; width: calc(100% - 90px);">Open Source Coding Community of Central Texas</p>
-      </div>
-
-    <script>
-      const navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-
-      function hideMenu() {
-        navLinks.style.right = "-400px";
-      }
-
-    </script>
-  </body>
-</html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Landing Page</title>
+
+
+
+    <link rel="stylesheet" href="codingclub.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titan+One&display=swap" rel="stylesheet" />
+
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/mdb.min.css" />
+
+  </head>
+
+  <body style="margin: 0; padding: 0; height: 100vh; font-family: Arial, sans-serif">
+
+    <section class="header">
+
+      <nav>
+
+        <div class="nav-links" id="navLinks">
+
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+
+            <li><a href="/">Home</a></li>
+
+            <li><a href="/">Blog Lists</a></li>
+
+            <li><a href="/">Socials</a></li>
+
+          </ul>
+
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+      </nav>
+
+    </section>
+
+
+
+    <div style="position: relative; width: 100%; height: 100vh; overflow: hidden">
+
+      <div class="right-block">
+
+        <img
+
+          id="spinImg"
+
+          src="images/OSCCCT Logo transparent.png"
+
+          alt="Landing Visual"
+
+          class="grow-on-load"
+
+        />
+
+      </div>
+
+      <div class="left-block">
+
+        <div class="landing-text-wrapper" style="font-size: 30px;">
+
+        <strong style="margin:0 0 0.5em 0; font-size: 85px;">
+
+          <span class="letter">O</span>
+
+          <span class="letter">S</span>
+
+          <span class="letter">C</span>
+
+          <span class="letter">C</span>
+
+          <span class="letter">C</span>
+
+          <span class="letter">T</span>
+
+         <!-- <span class="letter">&nbsp;</span>-->
+
+        </strong>
+
+        <p style="font-size:1.25em; margin:0; width: calc(100% - 90px);">Open Source Coding Community of Central Texas</p>
+
+      </div>
+
+
+
+    <script>
+
+      const navLinks = document.getElementById("navLinks");
+
+
+
+      function showMenu() {
+
+        navLinks.style.right = "0";
+
+      }
+
+
+
+      function hideMenu() {
+
+        navLinks.style.right = "-400px";
+
+      }
+
+
+
+    </script>
+
+  </body>
+
+</html>
+
