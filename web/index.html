@@ -1,83 +1,149 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Landing Page</title>
-
-    <link rel="stylesheet" href="site.css" />
-    <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titan+One&display=swap"
-    />
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/mdb.min.css" />
-  </head>
-
-  <body>
-    <section class="header">
-      <nav>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="/Website-Practice/web/index.html">Home</a></li>
-            <li><a href="/Website-Practice/web/members.html">Members</a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
-    </section>
-    <div class="right-split">
-      <div class="right-block">
-        <img
-          id="spinImg"
-          src="../images/OSCCCT Logo transparent.png"
-          alt="Landing Visual"
-          class="grow-on-load"
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
         />
-      </div>
-      <div class="left-block">
-        <div class="landing-text-wrapper">
-          <strong class="margin:0 0 0.5em 0; font-size: 85px;">
-            <span class="letter">O</span>
-            <span class="letter">S</span>
-            <span class="letter">C</span>
-            <span class="letter">C</span>
-            <span class="letter">C</span>
-            <span class="letter">T</span>
-          </strong>
-          <p style="font-size: 1.25em; margin: 0; width: calc(100% - 90px)">
-            Open Source Coding Community of Central Texas
-          </p>
+
+        <title>Landing Page</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titan+One&display=swap"
+        />
+        <link
+            rel="icon"
+            href="img/mdb-favicon.ico"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="css/mdb.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="../site.css"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <div
+                    class="nav-links"
+                    id="navLinks"
+                >
+                    <i
+                        class="fa fa-times"
+                        onclick="hideMenu()"
+                    ></i>
+                    <ul>
+                        <li>
+                            <a
+                                href="/Website-Practice/web/index.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="/Website-Practice/web/members.html"
+                                >Members</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <i
+                    class="fa fa-bars"
+                    onclick="showMenu()"
+                ></i>
+            </nav>
+        </section>
+        <div class="right-split">
+            <div class="right-block">
+                <img
+                    id="spinImg"
+                    src="../images/OSCCCT Logo transparent.png"
+                    alt="Landing Visual"
+                    class="grow-on-load"
+                />
+            </div>
+            <div class="left-block">
+                <div class="landing-text-wrapper">
+                    <strong
+                        style="
+                            margin: 0 0 0.5em 0;
+                            font-size: 85px;
+                        "
+                    >
+                        <span class="letter"
+                            >O</span
+                        >
+                        <span class="letter"
+                            >S</span
+                        >
+                        <span class="letter"
+                            >C</span
+                        >
+                        <span class="letter"
+                            >C</span
+                        >
+                        <span class="letter"
+                            >C</span
+                        >
+                        <span class="letter"
+                            >T</span
+                        >
+                    </strong>
+                    <p
+                        style="
+                            font-size: 1.25em;
+                            margin: 0;
+                            width: calc(
+                                100% - 90px
+                            );
+                        "
+                    >
+                        Open Source Coding
+                        Community of Central Texas
+                    </p>
+                </div>
+            </div>
+            <script>
+                const navLinks =
+                    document.getElementById(
+                        "navLinks"
+                    );
+
+                function showMenu() {
+                    navLinks.style.right = "0";
+                }
+
+                function hideMenu() {
+                    navLinks.style.right =
+                        "-400px";
+                }
+            </script>
         </div>
-      </div>
-      <script>
-        const navLinks = document.getElementById("navLinks");
-
-        function showMenu() {
-          navLinks.style.right = "0";
-        }
-
-        function hideMenu() {
-          navLinks.style.right = "-400px";
-        }
-      </script>
-    </div>
-  </body>
+    </body>
 </html>
