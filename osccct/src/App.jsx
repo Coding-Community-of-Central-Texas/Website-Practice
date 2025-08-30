@@ -8,12 +8,9 @@ import "./App.css";
 function App() {
   return (
     <Routes>
-      <Route path="/" 
-      element={<MainLayout />}
-      >
-        <Route
-         index element={<Home />} />
-        <Route     path="home" element={<Home />} />
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<Home />} />
+        <Route path="home" element={<Home />} />
         <Route path="member" element={<Members />} />
       </Route>
     </Routes>
