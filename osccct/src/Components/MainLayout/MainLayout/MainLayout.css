@@ -1,19 +1,19 @@
 footer {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
-    position: relative;
-    z-index: 2;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  position: relative;
+  z-index: 2;
 }
 
 main {
-    height: calc(100vh - var(--nav-bar-height) - var(--footer-height));
+  height: calc(100vh - var(--nav-bar-height) - var(--footer-height));
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
 }
