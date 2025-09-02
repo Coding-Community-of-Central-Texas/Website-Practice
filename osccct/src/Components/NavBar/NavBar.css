@@ -5,12 +5,8 @@
   margin-bottom: 0px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  background: rgb(64, 70, 84);
+ul {
+  margin: 0px;
 }
 
 .nav-links ul {
@@ -18,7 +14,7 @@ body {
   width: 100%;
   color: white;
   position: absolute;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .nav-links ul li {
@@ -73,7 +69,7 @@ nav .fa {
     top: 0;
     right: -100%;
     text-align: left;
-    z-index: 2;
+    z-index: 1;
     transition: 1s;
   }
 

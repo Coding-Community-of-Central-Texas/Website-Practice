@@ -1,0 +1,36 @@
+.header {
+  background-color: #000000;
+  color: white;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: rgb(64, 70, 84);
+}
+
+:root {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #242424;
+  --text-color: white;
+}
+
+@media (max-width: 900px) {
+  .text-box h1 {
+    font-size: 85px;
+  }
+}
