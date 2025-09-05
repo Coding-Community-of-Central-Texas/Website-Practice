@@ -9,12 +9,15 @@ ul {
   margin: 0px;
 }
 
+.nav-links {
+  height: var(--nav-bar-height);
+}
+
 .nav-links ul {
   background-color: #000000;
   width: 100%;
   color: white;
   position: absolute;
-  z-index: 1;
 }
 
 .nav-links ul li {
