@@ -1,0 +1,33 @@
+.members-container {
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.member-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.image-container {
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 1rem;
+  transition: transform 0.2s ease;
+  overflow: hidden;
+  height: 300px;
+}
+
+.member-card {
+  transition: transform 0.3s ease;
+}
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-image {
+  height: 300px;
+  width: 300px;
+}

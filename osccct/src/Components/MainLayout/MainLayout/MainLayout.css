@@ -5,14 +5,13 @@ footer {
   justify-content: center;
   margin-top: auto;
   position: relative;
-  z-index: 2;
 }
 
 main {
   height: calc(100vh - var(--nav-bar-height) - var(--footer-height));
 }
 
-.content {
+.main-content {
   display: flex;
   flex-direction: column;
   background-color: var(--primary-color);
