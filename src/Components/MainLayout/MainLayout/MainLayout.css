@@ -1,0 +1,18 @@
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  position: relative;
+}
+
+main {
+  height: calc(100vh - var(--nav-bar-height) - var(--footer-height));
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
