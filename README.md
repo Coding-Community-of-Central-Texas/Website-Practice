@@ -2,9 +2,9 @@
 
 Welcome to the OSCCCT website repo!
 
-# Dependencies
+## Dependencies
 
-# git
+### git
 
 - download the latest stable version from https://git-scm.com/download
 - follow the installation instructions for your OS
@@ -16,7 +16,7 @@ git --version
 
 -Follow these instructions to set up SSH keys for GitHub: [How to Setup up Your SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-## Node.js
+### Node.js
 
 - download the latest stable version from https://nodejs.org/en/
 - follow the installation instructions for your OS
@@ -26,7 +26,7 @@ git --version
 node -v
 ```
 
-# Installation
+## Installation
 
 navigate to the directory where you want to clone the repo
 
@@ -40,7 +40,7 @@ Run The following Command to Install the Required Node Packages
 npm install
 ```
 
-# How to run the website
+## How to run the website
 
 navigate to the folder where you cloned the repo
 i.e.
