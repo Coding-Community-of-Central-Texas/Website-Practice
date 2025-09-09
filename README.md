@@ -38,7 +38,7 @@ Navigate to the folder where you cloned the repo
 i.e.
 
 ```#bash
-cd ~/Documents/Website-Practice
+cd ~/Soure/Repos/Website-Practice
 ```
 
 Run The following Command to Install the Required Node Packages
