@@ -34,6 +34,13 @@ navigate to the directory where you want to clone the repo
 git clone git@github.com:Coding-Community-of-Central-Texas/Website-Practice.git
 ```
 
+navigate to the folder where you cloned the repo
+i.e.
+
+```#bash
+cd ~/Documents/Website-Practice
+```
+
 Run The following Command to Install the Required Node Packages
 
 ```#bash
@@ -42,15 +49,8 @@ npm install
 
 ## How to run the website
 
-navigate to the folder where you cloned the repo
-i.e.
+From inside of the repo, Run the following command to locally host the website
 
 ```#bash
-cd ~/Documents/Website-Practice
-```
-
-Run the following command to locally host the website
-
-```#bash
-npm run dev
+~/Path/To/Repo$ npm run dev
 ```
