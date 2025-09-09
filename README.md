@@ -52,5 +52,5 @@ npm install
 From inside of the repo, Run the following command to locally host the website
 
 ```#bash
-~/Path/To/Repo$ npm run dev
+npm run dev
 ```
