@@ -28,20 +28,20 @@ node -v
 
 ## Installation
 
-- Navigate to the directory where you want to clone the repo
+Navigate to the directory where you want to clone the repo
 
 ```#bash
 git clone git@github.com:Coding-Community-of-Central-Texas/Website-Practice.git
 ```
 
-- Navigate to the folder where you cloned the repo
-  i.e.
+Navigate to the folder where you cloned the repo
+i.e.
 
 ```#bash
 cd ~/Documents/Website-Practice
 ```
 
-- Run The following Command to Install the Required Node Packages
+Run The following Command to Install the Required Node Packages
 
 ```#bash
 npm install
@@ -49,7 +49,7 @@ npm install
 
 ## How to run the website
 
-- From inside of the repo, Run the following command to locally host the website
+From inside of the repo, Run the following command to locally host the website
 
 ```#bash
 npm run dev
