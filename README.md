@@ -14,7 +14,7 @@ Welcome to the OSCCCT website repo!
 git --version
 ```
 
--Follow these instructions to set up SSH keys for GitHub: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+-Follow these instructions to set up SSH keys for GitHub: [How to Setup up Your SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ## Node.js
 
