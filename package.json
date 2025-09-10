@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://coding-community-of-central-texas.github.io/Website-Practice/",
+  "homepage": "https://coding-community-of-central-texas.github.io/Website-Practice/#",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
