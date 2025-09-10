@@ -2,6 +2,7 @@ import React from "react";
 import "./Members.css";
 import Logo from "../../images/OSCCCT Logo transparent.png";
 import AmberImg from "../../images/amber.png";
+import MarkImg from "../../images/oroboros.png";
 
 // Creates a Role type that each member can have
 enum Role {
@@ -39,6 +40,7 @@ interface Member {
 // at the top of the page.
 const memberList: Member[] = [
   { name: "Amber Feeley", role: Role.Director, imageUrl: AmberImg },
+  { name: "Mark Henry", role: Role.ChiefMarketingOfficer, imageUrl: MarkImg },
 ];
 
 const createPyramid = <T,>(list: T[], maxRowSize = 3): T[][] => {
