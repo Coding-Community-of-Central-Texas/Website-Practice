@@ -5,7 +5,7 @@ import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <HashRouter basename="/Website-Practice/">
+    <HashRouter>
       <App />
     </HashRouter>
   </StrictMode>,
