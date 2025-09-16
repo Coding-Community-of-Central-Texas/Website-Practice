@@ -39,6 +39,7 @@ interface Member {
 // at the top of the page.
 const memberList: Member[] = [
   { name: "Amber Feeley", role: Role.Director, imageUrl: AmberImg },
+  { name: "Lexie Cabading", role: Role.Member}
 ];
 
 const createPyramid = <T,>(list: T[], maxRowSize = 3): T[][] => {
