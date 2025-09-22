@@ -44,6 +44,7 @@ const memberList: Member[] = [
   { name: "Amber Feeley", role: Role.Director, imageUrl: AmberImg },
   { name: "Mark Henry", role: Role.ChiefMarketingOfficer, imageUrl: MarkImg },
   { name: "Dominic Burfict", role: Role.Deputy, imageUrl: DomImg },
+  { name: "Lee Hamman", role: Role.Member }, 
 ];
 
 const createPyramid = <T,>(list: T[], maxRowSize = 3): T[][] => {
