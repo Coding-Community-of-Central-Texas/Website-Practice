@@ -9,7 +9,7 @@ import notionLogo from "../../images/Notion-logo.png";
 export default function NavBar() {
   return (
     <nav className="nav-links">
-      <div id="navLinks">
+      <div className="nav-links-container">
         <ul>
           <li>
             <NavLink to="home">Home</NavLink>
