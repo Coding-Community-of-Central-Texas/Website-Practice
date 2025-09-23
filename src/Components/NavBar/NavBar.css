@@ -9,7 +9,7 @@ ul {
   margin: 0px;
 }
 
-.nav-links {
+.nav-links-container {
   display: flex;
   justify-content: space-between; /* push navLinks left, socials right */
   align-items: center;
@@ -18,7 +18,7 @@ ul {
   padding-top: 0.5rem;
 }
 
-.nav-links ul {
+.nav-links-container ul {
   display: flex;    /* items side by side */
   margin: 0;
   padding: 0;
@@ -27,20 +27,20 @@ ul {
   width: auto;      /* let them size naturally */
 }
 
-#navLinks li,
-#socials li {
+.nav-links-container li,
+.socials li {
   list-style: none;
   padding: 10px 12px;
 }
 
-#navLinks a,
-#socials a {
+.nav-links-container a,
+.socials a {
   color: white;
   text-decoration: none;
   font-size: 20px;
 }
 
-#socials img {
+.socials img {
   max-height: 35px;
   object-fit: contain;
 }
@@ -65,7 +65,7 @@ nav .fa {
   display: none;
 }
 
-#socials{
+.socials{
   display: flex;
   align-items: flex-end;  /* centers text + image vertically */
   gap: 0.5rem;          /* space between text and image */
@@ -80,12 +80,12 @@ nav .fa {
     font-size: 85px;
   }
 
-  .nav-links ul li {
+  .nav-links-container ul li {
     display: block;
     background-color: transparent;
   }
 
-  .nav-links {
+  .nav-links-container {
     position: absolute;
     background: linear-gradient(225deg, #000000, rgb(53, 32, 59));
     height: 100vh;
