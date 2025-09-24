@@ -11,14 +11,14 @@ export default function NavBar() {
     <nav className="nav-links">
       <div className="nav-links-container">
         <ul>
-          <li>
+          <li className="page-link">
             <NavLink to="home">Home</NavLink>
           </li>
-          <li>
+          <li className="page-link">
             <NavLink to="members">Members</NavLink>
           </li>
         </ul>
-        <ul id="socials">
+        <ul>
           <li>
             <a href="https://www.instagram.com/oscc_ct/"><img src={instagramLogo} alt= "@oscc_ct"/></a>
           </li>
