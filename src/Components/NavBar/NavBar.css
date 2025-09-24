@@ -107,3 +107,7 @@ nav .fa {
     font-size: 25px;
   }
 }
+
+.page-link {
+  position: relative;
+}
