@@ -5,6 +5,10 @@
   overflow: hidden;
 }
 
+.home-page {
+  height: calc(100vh - 75px);
+}
+
 .landing-text-wrapper {
   display: flex;
   flex-direction: column;
