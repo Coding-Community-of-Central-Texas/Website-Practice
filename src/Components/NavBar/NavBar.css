@@ -64,17 +64,7 @@ ul {
 nav .fa {
   display: none;
 }
-
-.socials{
-  display: flex;
-  align-items: flex-end;  /* centers text + image vertically */
-  gap: 0.5rem;          /* space between text and image */
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  }
   
-
 @media (max-width: 900px) {
   .text-box h1 {
     font-size: 85px;
