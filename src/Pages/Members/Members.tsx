@@ -5,6 +5,7 @@ import AmberImg from "../../images/amber.png";
 import MarkImg from "../../images/oroboros.png";
 import DomImg from "../../images/doms_dog.png";
 import GrmImg from "../../images/MountainMan.png";
+import LexieImg from "../../images/lexiePFP.png";
 
 // Creates a Role type that each member can have
 enum Role {
@@ -47,7 +48,7 @@ const memberList: Member[] = [
   { name: "Dominic Burfict", role: Role.Deputy, imageUrl: DomImg },
   { name: "Lee Hamman", role: Role.Member },
   { name: "Guillermo Morrison", role: Role.Member, imageUrl: GrmImg } 
-  { name: "Lexie Cabading", role: Role.Member}
+  { name: "Lexie Cabading", role: Role.Member, imageUrl: LexieImg}
 ];
 
 const createPyramid = <T,>(list: T[], maxRowSize = 3): T[][] => {
