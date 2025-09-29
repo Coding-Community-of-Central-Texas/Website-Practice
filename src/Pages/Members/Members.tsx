@@ -4,6 +4,7 @@ import Logo from "../../images/OSCCCT Logo transparent.png";
 import AmberImg from "../../images/amber.png";
 import MarkImg from "../../images/oroboros.png";
 import DomImg from "../../images/doms_dog.png";
+import GrmImg from "../../images/MountainMan.png";
 
 // Creates a Role type that each member can have
 enum Role {
@@ -44,7 +45,8 @@ const memberList: Member[] = [
   { name: "Amber Feeley", role: Role.Director, imageUrl: AmberImg },
   { name: "Mark Henry", role: Role.ChiefMarketingOfficer, imageUrl: MarkImg },
   { name: "Dominic Burfict", role: Role.Deputy, imageUrl: DomImg },
-  { name: "Lee Hamman", role: Role.Member }, 
+  { name: "Lee Hamman", role: Role.Member },
+  { name: "Guillermo Morrison", role: Role.Member, imageUrl: GrmImg } 
 ];
 
 const createPyramid = <T,>(list: T[], maxRowSize = 3): T[][] => {
