@@ -9,29 +9,40 @@ ul {
   margin: 0px;
 }
 
-.nav-links {
+.nav-links-container {
+  display: flex;
+  justify-content: space-between; /* push navLinks left, socials right */
+  align-items: center;
   height: var(--nav-bar-height);
+  background: #000000;
+  padding-top: 0.5rem;
 }
 
-.nav-links ul {
-  background-color: #000000;
-  width: 100%;
-  color: white;
-  position: absolute;
-}
-
-.nav-links ul li {
+.nav-links-container ul {
+  display: flex;    /* items side by side */
+  margin: 0;
+  padding: 0;
   list-style: none;
-  display: inline-block;
-  padding: 10px 12px;
-  position: relative;
+  background: none; /* no forced background */
+  width: auto;      /* let them size naturally */
 }
 
-.nav-links ul li a {
+.nav-links-container li,
+.socials li {
+  list-style: none;
+  padding: 10px 12px;
+}
+
+.nav-links-container a,
+.socials a {
   color: white;
   text-decoration: none;
   font-size: 20px;
-  background-color: #000000;
+}
+
+.socials img {
+  max-height: 35px;
+  object-fit: contain;
 }
 
 .nav-links ul li a::after {
@@ -53,18 +64,18 @@ ul {
 nav .fa {
   display: none;
 }
-
+  
 @media (max-width: 900px) {
   .text-box h1 {
     font-size: 85px;
   }
 
-  .nav-links ul li {
+  .nav-links-container ul li {
     display: block;
     background-color: transparent;
   }
 
-  .nav-links {
+  .nav-links-container {
     position: absolute;
     background: linear-gradient(225deg, #000000, rgb(53, 32, 59));
     height: 100vh;
@@ -95,4 +106,8 @@ nav .fa {
     text-decoration: none;
     font-size: 25px;
   }
+}
+
+.page-link {
+  position: relative;
 }
