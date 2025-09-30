@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Logo from "../../images/OSCCCT Logo transparent.png";
+import Logo from "../../images/osccct-logo-transparent.png";
 
 export default function Home() {
   return (

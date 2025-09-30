@@ -1,6 +1,6 @@
 import React from "react";
 import "./Members.css";
-import Logo from "../../images/OSCCCT Logo transparent.png";
+import Logo from "../../images/osccct-logo-transparent.png";
 import AmberImg from "../../images/amber.png";
 import MarkImg from "../../images/oroboros.png";
 import DomImg from "../../images/doms_dog.png";
