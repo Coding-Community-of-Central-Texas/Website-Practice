@@ -165,58 +165,67 @@ export default function MemberProfile() {
       <div
         style={{
           display: "flex",
-          gap: "10%",
+          gap: "24px",
           flexWrap: "wrap",
           marginTop: "1.5rem",
         }}
       >
-        {/* Socials */}
-        {profile?.socials && (
-          <div>
-            <h3>Connect</h3>
-            {profile.socials.github && (
-              <p>
-                <a href={profile.socials.github}>GitHub</a>
-              </p>
-            )}
-            {profile.socials.linkedin && (
-              <p>
-                <a href={profile.socials.linkedin}>LinkedIn</a>
-              </p>
-            )}
-            {profile.socials.website && (
-              <p>
-                <a href={profile.socials.website}>Website</a>
-              </p>
-            )}
-            {profile.socials.email && (
-              <p>
-                <a href={profile.socials.email}>Email</a>
-              </p>
-            )}
-          </div>
-        )}
-
-        {/* Projects */}
-        {profile?.projects && (
-          <div>
-            <h3>Projects</h3>
-            {profile.projects.map((s) => (
-              <div>
-                <p key={s.title}>
-                  <a href={s.link}>{s.title}</a>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            flex: "1 1 30%",
+            gap: "24px",
+          }}
+        >
+          {/* Socials */}
+          {profile?.socials && (
+            <div>
+              <h3>Connect</h3>
+              {profile.socials.github && (
+                <p>
+                  <a href={profile.socials.github}>GitHub</a>
                 </p>
-                <ul>
-                  <li>{s.summary}</li>
-                </ul>
-              </div>
-            ))}
-          </div>
-        )}
+              )}
+              {profile.socials.linkedin && (
+                <p>
+                  <a href={profile.socials.linkedin}>LinkedIn</a>
+                </p>
+              )}
+              {profile.socials.website && (
+                <p>
+                  <a href={profile.socials.website}>Website</a>
+                </p>
+              )}
+              {profile.socials.email && (
+                <p>
+                  <a href={profile.socials.email}>Email</a>
+                </p>
+              )}
+            </div>
+          )}
+
+          {/* Projects */}
+          {profile?.projects && (
+            <div>
+              <h3>Projects</h3>
+              {profile.projects.map((s) => (
+                <div>
+                  <p key={s.title}>
+                    <a href={s.link}>{s.title}</a>
+                  </p>
+                  <ul>
+                    <li>{s.summary}</li>
+                  </ul>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
 
         {/* Timeline */}
         {profile?.timeline && (
-          <div>
+          <div className="profile-links-wrapper">
             <h3>Timeline</h3>
             {profile.timeline.map((s) => (
               <div style={{ padding: "0 0 8px 0" }}>
@@ -236,7 +245,7 @@ export default function MemberProfile() {
 
         {/* Badges */}
         {profile?.badges && (
-          <div>
+          <div className="profile-links-wrapper">
             <h3>Badges</h3>
             {profile.badges.map((b) => (
               <ul>

@@ -14,3 +14,8 @@
 .member-profile a:visited {
   color: #3b82f6; /* Keep visited links same as normal */
 }
+
+.profile-links-wrapper {
+  flex: 1 1 24%;
+  min-width: 10%;
+}
