@@ -1,0 +1,51 @@
+{
+  "title": "Bachelor's of Science in Computer Science - December 2025 graduate",
+  "pronouns": "she/her",
+  "location": "Temple, Texas",
+  "bio": "President of OSCCCT with a strong passion for software development. I have experience in full-stack development and software testing, and I strive to foster an inclusive, collaborative environment that empowers members and drives the club toward its goals while nurturing the ideas members have. I'm here to help, learn, and grow alongside the community. Feel free to reach out with questions, suggestions, or project ideas! In my free time, I enjoy hiking, skiing, knitting, and spending time with my 4 cats and 2 dogs.",
+  "skills": [
+    "C#",
+    ".NET",
+    "Git",
+    "PostgreSQL",
+    "Docker",
+    "Playwright",
+    "Unit Tests",
+    "React",
+    "JavaScript",
+    "C++",
+    "Java"
+  ],
+  "badges": ["Open Source", "Mentor", "Software Developer"],
+  "socials": {
+    "github": "https://github.com/amberfeeley",
+    "linkedin": "https://www.linkedin.com/in/amber-feeley-a81237268/",
+    "website": "https://www.amberfeeley.com"
+  },
+  "projects": [
+    {
+      "title": "Sproutly",
+      "summary": "A homesteading app built with React + Nest.js",
+      "link": "https://github.com/amberfeeley/Sproutly"
+    },
+    {
+      "title": "Grace and Lovelace",
+      "summary": "Social Networking app with React + Node.js + PostgreSQL.",
+      "link": "https://github.com/amberfeeley/GAL"
+    }
+  ],
+  "timeline": [
+    {
+      "title": "Director",
+      "org": "OSCCCT",
+      "date": "July 2025 – Present",
+      "details": "President of the TAMUCT Coding Club."
+    },
+    {
+      "title": "Software Developer Intern",
+      "org": "Triduem",
+      "date": "Sept 2024 – Present",
+      "details": "Develop and test software."
+    }
+  ]
+}
