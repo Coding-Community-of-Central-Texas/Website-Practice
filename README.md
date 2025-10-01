@@ -57,7 +57,7 @@ npm run dev
 ## Add yourself to the Member Page!
 
 1. Navigate to the [Issues tab](https://github.com/Coding-Community-of-Central-Texas/Website-Practice/issues) at the top of the page.
-2. Create an issue thttps://github.com/Coding-Community-of-Central-Texas/Website-Practice/issuesitled "Add {your name} to the member page". Add a short description to the issue.
+2. Create an issue titled "Add {your name} to the member page". Add a short description to the issue.
 3. Assign yourself to the issue
 
 <img width="582" height="136" alt="Screenshot 2025-10-01 at 10 38 09 AM" src="https://github.com/user-attachments/assets/a2c6efd5-aa4e-4ca5-b605-04734aa1d698" />
