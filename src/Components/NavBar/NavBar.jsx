@@ -20,16 +20,24 @@ export default function NavBar() {
         </ul>
         <ul>
           <li>
-            <a href="https://www.instagram.com/oscc_ct/"><img src={instagramLogo} alt= "@oscc_ct"/></a>
+            <a href="https://www.instagram.com/oscc_ct/">
+              <img src={instagramLogo} alt="@oscc_ct" />
+            </a>
           </li>
           <li>
-            <a href="https://discord.gg/NJ4U5jrBbX"><img src={discordLogo} alt="Coding Club"/></a>
+            <a href="https://discord.gg/NJ4U5jrBbX">
+              <img src={discordLogo} alt="Coding Club" />
+            </a>
           </li>
           <li>
-            <a href="https://tamuct.presence.io/organization/open-source-coding-community-of-central-texas"><img src={presenceLogo} alt="Presence"/></a>
+            <a href="https://tamuct.presence.io/organization/open-source-coding-community-of-central-texas">
+              <img src={presenceLogo} alt="Presence" />
+            </a>
           </li>
           <li>
-            <a href="https://www.notion.so/osccct/Open-Source-Coding-Community-of-Central-Texas-OSCCCT"><img src={notionLogo} alt="Notion"/></a>
+            <a href="https://www.notion.so/osccct/Open-Source-Coding-Community-of-Central-Texas-OSCCCT">
+              <img src={notionLogo} alt="Notion" />
+            </a>
           </li>
         </ul>
       </div>

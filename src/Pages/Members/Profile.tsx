@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { members } from "../../data/members";
 import Logo from "../../images/osccct-logo-transparent.png";
+import { slugify } from "../../data/members";
 
 type Socials = {
   github?: string;
@@ -32,7 +33,7 @@ interface ProfileData {
 
 export default function MemberProfile() {
   const { slug } = useParams<{ slug?: string }>();
-  const member = members.find((m) => m.slug === slug);
+  const member = members.find((m) => slugify(m.name) === slug);
 
   const [profile, setProfile] = useState<ProfileData | null>(null);
   const [loading, setLoading] = useState(true);

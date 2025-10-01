@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 import "./Members.css";
 import Logo from "../../images/osccct-logo-transparent.png";
-import { members, roleOrder } from "../../data/members";
+import { members, roleOrder, slugify } from "../../data/members";
 
 const createPyramid = <T,>(list: T[], maxRowSize = 3): T[][] => {
   const pyramid: T[][] = [];
@@ -37,9 +37,8 @@ export default function Members() {
         <div className="member-row" key={rowIndex}>
           {row.map((member) => (
             <Link
-              to={`/members/${member.slug}`} // <-- hyperlink
+              to={`/members/${slugify(member.name)}`} // <-- hyperlink
               className="member-card"
-              key={member.slug}
             >
               <div className="image-container">
                 <img
