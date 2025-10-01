@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useMemo } from "react";
+import { Link } from "react-router-dom";
 import "./Members.css";
 import Logo from "../../images/osccct-logo-transparent.png";
 import AmberImg from "../../images/amber.png";
@@ -18,7 +19,7 @@ enum Role {
   Alumni = "Alumni",
 }
 
-// Allows for members to be sorted by role hiearchy
+// Allows for members to be sorted by role hierarchy
 const roleOrder: Record<Role, number> = {
   [Role.Director]: 1,
   [Role.Deputy]: 2,
@@ -30,24 +31,24 @@ const roleOrder: Record<Role, number> = {
 };
 
 // The skeleton of each member
-// Everyone has a name and role
-// imageUrl is optional
 interface Member {
   name: string;
   role: Role;
   imageUrl?: string;
+  slug: string; // <-- used for /members/:slug
 }
 
-// TODO: Add yourself to the member list with your current role
-// Optional: Upload a photo to the /images folder then add it to the imports
-// at the top of the page.
-// Then add the role variable to your member object
+// helper to build slugs from names
+const slugify = (name: string) =>
+  name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+// Member list (add slug)
 const memberList: Member[] = [
-  { name: "Amber Feeley", role: Role.Director, imageUrl: AmberImg },
-  { name: "Mark Henry", role: Role.ChiefMarketingOfficer, imageUrl: MarkImg },
-  { name: "Dominic Burfict", role: Role.Deputy, imageUrl: DomImg },
-  { name: "Lee Hamman", role: Role.Member },
-  { name: "Guillermo Morrison", role: Role.Member, imageUrl: GrmImg },
+  { name: "Amber Feeley", role: Role.Director, imageUrl: AmberImg, slug: slugify("Amber Feeley") },
+  { name: "Mark Henry", role: Role.ChiefMarketingOfficer, imageUrl: MarkImg, slug: slugify("Mark Henry") },
+  { name: "Dominic Burfict", role: Role.Deputy, imageUrl: DomImg, slug: slugify("Dominic Burfict") },
+  { name: "Lee Hamman", role: Role.Member, imageUrl: undefined, slug: slugify("Lee Hamman") },
+  { name: "Guillermo Morrison", role: Role.Member, imageUrl: GrmImg, slug: slugify("Guillermo Morrison") },
   { name: "Lexie Cabading", role: Role.Member, imageUrl: LexieImg },
 ];
 
@@ -63,9 +64,14 @@ const createPyramid = <T,>(list: T[], maxRowSize = 3): T[][] => {
 };
 
 export default function Members() {
-  // Sorts member list by role
-  const sortedMembers = [...memberList].sort(
-    (a, b) => roleOrder[a.role] - roleOrder[b.role],
+  // Sort by role, then name for stable order
+  const sortedMembers = useMemo(
+    () =>
+      [...memberList].sort((a, b) => {
+        const diff = roleOrder[a.role] - roleOrder[b.role];
+        return diff !== 0 ? diff : a.name.localeCompare(b.name);
+      }),
+    []
   );
 
   const pyramid = createPyramid(sortedMembers);
@@ -73,28 +79,34 @@ export default function Members() {
   return (
     <div className="members-container">
       <h2>Our Members</h2>
-      {
-        // Creates a map of each member in the list and their attributes (name, role, image)
-        pyramid.map((row, rowIndex) => (
-          <div className="member-row" key={rowIndex}>
-            {row.map((member, index) => (
-              <div className="member-card" key={index}>
-                <div className="image-container">
-                  <img
-                    src={member.imageUrl || Logo}
-                    alt={member.name}
-                    className="member-image"
-                  />
-                </div>
-                <div>
-                  <strong>{member.name}</strong>
-                  <p>{member.role}</p>
-                </div>
+      {pyramid.map((row, rowIndex) => (
+        <div className="member-row" key={rowIndex}>
+          {row.map((member) => (
+            <Link
+              to={`/members/${member.slug}`}        // <-- hyperlink
+              className="member-card"
+              key={member.slug}
+            >
+              <div className="image-container">
+                <img
+                  src={member.imageUrl || Logo}
+                  alt={`${member.name} — ${member.role}`}
+                  className="member-image"
+                  loading="lazy"
+                  onError={(e) => {
+                    const img = e.target as HTMLImageElement;
+                    if (img.src !== Logo) img.src = Logo; // fallback
+                  }}
+                />
               </div>
-            ))}
-          </div>
-        ))
-      }
+              <div>
+                <strong>{member.name}</strong>
+                <p>{member.role}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      ))}
     </div>
   );
 }

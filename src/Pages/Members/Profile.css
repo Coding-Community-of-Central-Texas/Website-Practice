@@ -1,0 +1,16 @@
+/* Profile page link styling with lighter blue */
+.member-profile a {
+  color: #3b82f6;              /* Blue-500: lighter, higher contrast */
+  text-decoration: none;       /* No underline by default */
+  font-weight: 500;            /* Slightly bold */
+  transition: color 0.2s ease;
+}
+
+.member-profile a:hover {
+  color: #2563eb;              /* Blue-600: darker hover */
+  text-decoration: underline;  /* Add underline on hover */
+}
+
+.member-profile a:visited {
+  color: #3b82f6;              /* Keep visited links same as normal */
+}

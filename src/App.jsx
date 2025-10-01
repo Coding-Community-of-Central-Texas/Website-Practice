@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from "./Components/MainLayout/MainLayout/MainLayout";
 import Home from "./Pages/Home/Home";
 import Members from "./Pages/Members/Members";
+import MemberProfile from "./Pages/Members/Profile"; // <-- new profile page
 import "./App.css";
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
         <Route index element={<Home />} />
         <Route path="home" element={<Home />} />
         <Route path="members" element={<Members />} />
+        {/* NEW: dynamic route for About Me pages */}
+        <Route path="members/:slug" element={<MemberProfile />} />
       </Route>
     </Routes>
   );

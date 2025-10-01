@@ -1,0 +1,37 @@
+{
+  "title": "Role or specialty",
+  "pronouns": "they/them",
+  "location": "City, Country",
+  "bio": "2–4 sentence professional bio.",
+  "skills": [
+    "Go (Golang)",
+    "PostgreSQL",
+    "React",
+    "Docker"
+  ],
+  "badges": [
+    "Open Source",
+    "Mentor"
+  ],
+  "socials": {
+    "github": "https://github.com/username",
+    "linkedin": "https://linkedin.com/in/username",
+    "website": "https://example.com",
+    "email": "mailto:username@example.com"
+  },
+  "projects": [
+    {
+      "title": "Project Name",
+      "summary": "Short description of the project.",
+      "link": "https://github.com/username/project"
+    }
+  ],
+  "timeline": [
+    {
+      "title": "Role",
+      "org": "Organization",
+      "date": "2023–Present",
+      "details": "One-line description."
+    }
+  ]
+}
