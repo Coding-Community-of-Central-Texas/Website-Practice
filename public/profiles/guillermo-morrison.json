@@ -4,23 +4,22 @@
   "location": "Texas, USA",
   "bio": "Cybersecurity enthusiast and back-end developer with a strong interest in Go, databases, and secure systems. Experienced in building web applications, working with SQL, and applying risk management frameworks. Passionate about open source projects, continuous learning, and bridging the gap between software engineering and information security.",
   "skills": [
-  "Go (Golang)",
-  "SQL (PostgreSQL, MSSQL, SQLite)",
-  "C++",
-  "Python",
-  "JavaScript/React",
-  "REST API Development",
-  "Docker & Docker Compose",
-  "Git/GitHub",
-  "Database Design & Management",
-  "Cybersecurity (NIST Frameworks, Risk Assessment, Incident Response)",
-  "Vulnerability Management",
-  "Secure Coding Practices",
-  "Penetration Testing Tools (Wireshark, Hydra, OpenVAS, Nessus, Splunk)",
-  "System Design & Modeling (UML, ERD, DFD)",
-  "Agile/Scrum & Project Management Basics"
-]
-,
+    "Go (Golang)",
+    "SQL (PostgreSQL, MSSQL, SQLite)",
+    "C++",
+    "Python",
+    "JavaScript/React",
+    "REST API Development",
+    "Docker & Docker Compose",
+    "Git/GitHub",
+    "Database Design & Management",
+    "Cybersecurity (NIST Frameworks, Risk Assessment, Incident Response)",
+    "Vulnerability Management",
+    "Secure Coding Practices",
+    "Penetration Testing Tools (Wireshark, Hydra, OpenVAS, Nessus, Splunk)",
+    "System Design & Modeling (UML, ERD, DFD)",
+    "Agile/Scrum & Project Management Basics"
+  ],
   "badges": ["Open Source", "Builder"],
   "socials": {
     "github": "https://github.com/cyber-mountain-man",
@@ -29,11 +28,25 @@
     "email": "mailto:morrison.guillermo@gmail.com"
   },
   "projects": [
-    { "title": "statistical-go", "summary": "Data analysis library in Go.", "link": "https://github.com/cyber-mountain-man" },
+    {
+      "title": "statistical-go",
+      "summary": "Data analysis library in Go.",
+      "link": "https://github.com/cyber-mountain-man"
+    },
     { "title": "go-web-mvp-template", "summary": "Go + HTMX + Bulma starter." }
   ],
   "timeline": [
-    { "title": "Member", "org": "OSCCCT", "date": "2024–Present", "details": "Back-end & security projects." },
-    { "title": "Systems Engineering Intern", "org": "Trideum", "date": "2024", "details": "Hands-on systems work." }
+    {
+      "title": "Member",
+      "org": "OSCCCT",
+      "date": "2024–Present",
+      "details": "Back-end & security projects."
+    },
+    {
+      "title": "Systems Engineering Intern",
+      "org": "Trideum",
+      "date": "2024",
+      "details": "Hands-on systems work."
+    }
   ]
 }

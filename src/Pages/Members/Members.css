@@ -22,12 +22,10 @@
 
 .member-card {
   transition: transform 0.3s ease;
-    text-decoration: none;
   color: inherit;
-  display: inline-flex; /* keep your existing hover/transition rules */
-  align-items: center;
-  text-decoration: none; color: inherit;
+  text-decoration: none;
 }
+
 .member-card:hover {
   transform: translateY(-5px);
 }
@@ -37,7 +35,7 @@
   width: 300px;
 }
 
-.member-card:focus { 
+.member-card:focus {
   outline: 2px solid #2563eb;
-  outline-offset: 2px; 
+  outline-offset: 2px;
 }

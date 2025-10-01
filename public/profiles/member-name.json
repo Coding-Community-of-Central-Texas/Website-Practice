@@ -3,16 +3,8 @@
   "pronouns": "they/them",
   "location": "City, Country",
   "bio": "2–4 sentence professional bio.",
-  "skills": [
-    "Go (Golang)",
-    "PostgreSQL",
-    "React",
-    "Docker"
-  ],
-  "badges": [
-    "Open Source",
-    "Mentor"
-  ],
+  "skills": ["Go (Golang)", "PostgreSQL", "React", "Docker"],
+  "badges": ["Open Source", "Mentor"],
   "socials": {
     "github": "https://github.com/username",
     "linkedin": "https://linkedin.com/in/username",

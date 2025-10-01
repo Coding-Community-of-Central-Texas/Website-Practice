@@ -1,5 +1,4 @@
 // Shared member data so both the grid and profile page use the same source.
-
 export enum Role {
   Director = "Director",
   Deputy = "Deputy Director",
@@ -24,13 +23,16 @@ export interface Member {
   name: string;
   role: Role;
   imageUrl?: string;
-  slug: string;          // <- used in route /members/:slug
-  bio?: string;          // <- optional short bio for profile page
+  slug: string; // <- used in route /members/:slug
+  bio?: string; // <- optional short bio for profile page
 }
 
 // Helpers
 const slugify = (name: string) =>
-  name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
 
 // Images (adjust names if yours differ)
 import Logo from "../images/osccct-logo-transparent.png";
@@ -39,10 +41,43 @@ import MarkImg from "../images/oroboros.png";
 import DomImg from "../images/doms_dog.png";
 import GrmImg from "../images/MountainMan.png";
 
+// TODO: Add yourself to the member list with your current role
+// Optional: Upload a photo to the /images folder,
+// then add it to the imports above.
 export const members: Member[] = [
-  { name: "Amber Feeley", role: Role.Director, imageUrl: AmberImg, slug: slugify("Amber Feeley"), bio: "Director of OSCCCT." },
-  { name: "Mark Henry", role: Role.ChiefMarketingOfficer, imageUrl: MarkImg, slug: slugify("Mark Henry"), bio: "Leads marketing initiatives." },
-  { name: "Dominic Burfict", role: Role.Deputy, imageUrl: DomImg, slug: slugify("Dominic Burfict"), bio: "Deputy Director." },
-  { name: "Lee Hamman", role: Role.Member, imageUrl: Logo, slug: slugify("Lee Hamman"), bio: "Community member." },
-  { name: "Guillermo Morrison", role: Role.Member, imageUrl: GrmImg, slug: slugify("Guillermo Morrison"), bio: "Back-end & cybersecurity." },
+  {
+    name: "Amber Feeley",
+    role: Role.Director,
+    imageUrl: AmberImg,
+    slug: slugify("Amber Feeley"),
+    bio: "Director of OSCCCT.",
+  },
+  {
+    name: "Mark Henry",
+    role: Role.ChiefMarketingOfficer,
+    imageUrl: MarkImg,
+    slug: slugify("Mark Henry"),
+    bio: "Leads marketing initiatives.",
+  },
+  {
+    name: "Dominic Burfict",
+    role: Role.Deputy,
+    imageUrl: DomImg,
+    slug: slugify("Dominic Burfict"),
+    bio: "Deputy Director.",
+  },
+  {
+    name: "Lee Hamman",
+    role: Role.Member,
+    imageUrl: Logo,
+    slug: slugify("Lee Hamman"),
+    bio: "Community member.",
+  },
+  {
+    name: "Guillermo Morrison",
+    role: Role.Member,
+    imageUrl: GrmImg,
+    slug: slugify("Guillermo Morrison"),
+    bio: "Back-end & cybersecurity.",
+  },
 ];

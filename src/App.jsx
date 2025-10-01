@@ -13,7 +13,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="home" element={<Home />} />
         <Route path="members" element={<Members />} />
-        {/* NEW: dynamic route for About Me pages */}
+        {/* Dynamic route for About Me pages */}
         <Route path="members/:slug" element={<MemberProfile />} />
       </Route>
     </Routes>
