@@ -1,8 +1,9 @@
 import React from "react";
 import "./Home.css";
-import Logo from "../../images/OSCCCT Logo transparent.png";
+import Logo from "../../images/osccct-logo-transparent.png";
 
 export default function Home() {
+  document.title = "OSCCCT";
   return (
     <div className="home-page">
       <div className="right-split">

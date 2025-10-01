@@ -19,12 +19,12 @@ ul {
 }
 
 .nav-links-container ul {
-  display: flex;    /* items side by side */
+  display: flex; /* items side by side */
   margin: 0;
   padding: 0;
   list-style: none;
   background: none; /* no forced background */
-  width: auto;      /* let them size naturally */
+  width: auto; /* let them size naturally */
 }
 
 .nav-links-container li,
@@ -64,7 +64,7 @@ ul {
 nav .fa {
   display: none;
 }
-  
+
 @media (max-width: 900px) {
   .text-box h1 {
     font-size: 85px;

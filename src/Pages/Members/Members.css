@@ -22,7 +22,10 @@
 
 .member-card {
   transition: transform 0.3s ease;
+  color: inherit;
+  text-decoration: none;
 }
+
 .member-card:hover {
   transform: translateY(-5px);
 }
@@ -30,4 +33,9 @@
 .member-image {
   height: 300px;
   width: 300px;
+}
+
+.member-card:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
 }
