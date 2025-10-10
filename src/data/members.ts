@@ -40,6 +40,7 @@ import MarkImg from "../images/oroboros.png";
 import DomImg from "../images/doms_dog.png";
 import GrmImg from "../images/MountainMan.png";
 import LexieImg from "../images/lexiePFP.png";
+import JoseImg from "../images/josepfp.png";
 
 // TODO: Add yourself to the member list with your current role
 // Optional: Upload a photo to the /images folder,
@@ -74,6 +75,12 @@ export const members: Member[] = [
     role: Role.Member,
     imageUrl: GrmImg,
     bio: "Back-end & cybersecurity.",
+  },
+  {
+    name: "Jose Ramos",
+    role:Role.ChiefOperationsOfficer,
+    imageUrl: JoseImg,
+    bio: "Community member."
   },
   {
     name: "Lexie Cabading",
