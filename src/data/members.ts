@@ -79,9 +79,9 @@ export const members: Member[] = [
   },
   {
     name: "Jose Ramos",
-    role:Role.ChiefOperationsOfficer,
+    role: Role.ChiefOperationsOfficer,
     imageUrl: JoseImg,
-    bio: "Community member."
+    bio: "Community member.",
   },
   {
     name: "Lexie Cabading",
