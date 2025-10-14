@@ -41,6 +41,7 @@ import DomImg from "../images/doms_dog.png";
 import GrmImg from "../images/MountainMan.png";
 import LexieImg from "../images/lexiePFP.png";
 import JoseImg from "../images/josepfp.png";
+import OracioImg from "../images/oracio.png";
 
 // TODO: Add yourself to the member list with your current role
 // Optional: Upload a photo to the /images folder,
@@ -86,6 +87,12 @@ export const members: Member[] = [
     name: "Lexie Cabading",
     role: Role.Member,
     imageUrl: LexieImg,
+    bio: "Community member.",
+  },
+  {
+    name: "Oracio Licea",
+    role: Role.Member,
+    imageUrl: OracioImg,
     bio: "Community member.",
   },
 ];
