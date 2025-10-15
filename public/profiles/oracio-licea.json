@@ -1,0 +1,41 @@
+{
+  "title": "BS - Computer Science (expected Fall 2026 Graduate)",
+  "pronouns": "he/him",
+  "location": "Texas, USA",
+  "bio": "Software developer with a strong emphasis on front-end and back-end application development. Mainly looking to learn, develop and constuct new projects using my knowledge and skills to collaborate with others. I'm always looking forward to expanding my skills and improving my professional portfolio, don't hesitate to ask me for assistance!",
+  "skills": [
+    "Java",
+    "C++",
+    "JavaScript",
+    "MySQL",
+    "C#",
+    "Python",
+    "HTML/CSS",
+    "Git"
+  ],
+  "socials": {
+    "github": "https://github.com/o-licea",
+    "linkedin": "https://linkedin.com",
+    "website": "https://o-licea.github.com"
+  },
+  "projects": [
+    {
+      "title": "C++ Code Analyzer",
+      "summary": "Analyzes code written in the C++ language and checks for syntax errors.",
+      "link": "https://github.com/o-licea/C-Code-Analyzer"
+    },
+    {
+      "title": "GUI Blackjack",
+      "summary": "Utilizes Java with the Maven project layout to simulate a game of Blackjack.",
+      "link": "https://github.com/o-licea/C-Code-Analyzer"
+    }
+  ],
+  "timeline": [
+    {
+      "title": "Member",
+      "org": "OSCCCT",
+      "date": "September 2025 - Present",
+      "details": "Assisting in both front-end and back-end projects"
+    }
+  ]
+}
