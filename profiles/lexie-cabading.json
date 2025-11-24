@@ -1,0 +1,27 @@
+{
+  "title": "Undergraduate (Fall '26) - Bachelor's of Science in Computer Science",
+  "pronouns": "she/her",
+  "location": "Killeen, USA",
+  "bio": "Vice President of the Coding Warriors Club. Experienced in machine learning and Learning programming and technology, and always eager to learn something new. I love playing video games, baking, singing karaoke with family and friends, and watching melodramatic anime and Korean dramas. ",
+  "skills": ["Java", "C++", "Python", "Github"],
+  "socials": {
+    "github": "https://github.com/lexierex101",
+    "linkedin": "https://www.linkedin.com/in/alexandria-cabading-2983752a8/",
+    "email": "ac195@my.tamuct.edu"
+  },
+
+  "timeline": [
+    {
+      "title": "Vice President",
+      "org": "Coding Warriors Club",
+      "date": "Nov 2025–Present",
+      "details": "Lead club initiatives focused on programming, peer collaboration, and tech outreach."
+    },
+    {
+      "title": "Student Research Assistant",
+      "org": "COBA Texas A&M University-Central Texas",
+      "date": "Mar 2025–Present",
+      "details": "Research on practical AI techniques for cybersecurity anomalies detection."
+    }
+  ]
+}
