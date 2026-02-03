@@ -33,8 +33,8 @@ export default function Projects() {
           <div className="project-row" key={rowIndex}>
             {row.map((project) => (
               <Link
-                to={`/members/${slugify(project.name)}`} // <-- hyperlink
-                className="member-card"
+                to={`/projects/${slugify(project.name)}`} // <-- hyperlink
+                className="project-card"
               >
                 <div>
                   <strong>{project.name}</strong>

@@ -16,7 +16,7 @@ export interface Project {
   name: string;
   category: Category;
   url?: string;
-  descripton?: string;
+  description?: string;
 }
 
 // Helpers

@@ -5,6 +5,7 @@ import Home from "./Pages/Home/Home";
 import Projects from "./Pages/Projects/Projects";
 import Members from "./Pages/Members/Members";
 import MemberProfile from "./Pages/Members/Profile"; // <-- new profile page
+import Project from "./Pages/Projects/Project"; // <-- new profile page
 import "./App.css";
 
 function App() {
