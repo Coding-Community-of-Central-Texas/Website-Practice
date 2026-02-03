@@ -17,6 +17,9 @@ export default function NavBar() {
           <li className="page-link">
             <NavLink to="members">Members</NavLink>
           </li>
+          <li className="page-link">
+            <NavLink to="projects">Projects</NavLink>
+          </li>
         </ul>
         <ul>
           <li>
