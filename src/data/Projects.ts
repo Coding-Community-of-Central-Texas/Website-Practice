@@ -30,12 +30,16 @@ export const slugify = (name: string) =>
 export const projects: Project[] = [
   {
     id: 1,
-    name: "Website",
+    name: "Club Website",
     category: Category.Coding,
+    description:
+      "This website!! Built with React and TypeScript, hosted on GitHub Pages",
   },
   {
     id: 2,
     name: "Rainy Daze",
     category: Category.Monogame,
+    description:
+      "A 2D platformer game built with C# and Monogame, featuring pixel art and a rainy atmosphere",
   },
 ];
