@@ -13,6 +13,7 @@ export const categoryOrder: Record<Category, number> = {
 };
 
 export interface Project {
+  id: number;
   name: string;
   category: Category;
   url?: string;
@@ -28,10 +29,12 @@ export const slugify = (name: string) =>
 
 export const projects: Project[] = [
   {
+    id: 1,
     name: "Website",
     category: Category.Coding,
   },
   {
+    id: 2,
     name: "Rainy Daze",
     category: Category.Monogame,
   },

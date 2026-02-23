@@ -61,15 +61,15 @@ export default function Project() {
   useEffect(() => {
     document.title = project
       ? `${project.name} — OSCCCT`
-      : "Member not found — OSCCCT";
+      : "Project not found — OSCCCT";
   }, [project]);
 
   if (!slug || !project) {
     return (
       <div style={{ padding: "2rem" }}>
-        <h2>Member not found</h2>
-        <p>The profile you’re looking for doesn’t exist.</p>
-        <Link to="/members">← Back to Members</Link>
+        <h2>Project not found</h2>
+        <p>The project you’re looking for doesn’t exist.</p>
+        <Link to="/projects">← Back to Projects</Link>
       </div>
     );
   }
@@ -80,14 +80,14 @@ export default function Project() {
       style={{ maxWidth: "75%", margin: "0 auto", padding: "2rem" }}
     >
       <Link
-        to="/members"
+        to="/projects"
         style={{
           display: "inline-block",
           marginBottom: "1rem",
           textDecoration: "none",
         }}
       >
-        ← Back to Members
+        ← Back to Projects
       </Link>
 
       {/* Hero */}
