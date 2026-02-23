@@ -1,0 +1,56 @@
+{
+  "title": "Full-stack Software Developer",
+  "pronouns": "he/him",
+  "location": "Killeen, Texas",
+  "bio": "I’m a software engineer currently pursuing a Bachelor's degree in Computer Science. I have experience in Go, Python, C++, and JavaScript, with a focus on backend development and building command-line tools. While I specialize in backend systems, I am also capable of full-stack development. I have successfully deployed live products and am driven to create scalable, efficient systems. My goal is to continue honing my software engineering skills and contribute to impactful projects.",
+  "skills": [
+    "Go",
+    "C#",
+    "SQL",
+    "C++",
+    "JS",
+    "Git",
+    "Docker",
+    "Redis",
+    "Linux",
+    "Python",
+    "HTML",
+    "CSS",
+    "NoSQL"
+  ],
+  "badges": ["Open Source", "Director"],
+  "socials": {
+    "github": "https://github.com/atliod",
+    "linkedin": "https://linkedin.com/in/dominic-burfict"
+  },
+  "projects": [
+    {
+      "title": "Gozelle",
+      "summary": "A Blazing fast smart cd command written in go ",
+      "link": "https://github.com/atliod/gozelle"
+    },
+    {
+      "title": "donow",
+      "summary": "A Task management Platform written in go and HTMX ",
+      "link": "https://github.com/atliod/donow"
+    }
+  ],
+  "timeline": [
+    {
+      "title": "Associates in Computer Science",
+      "org": "Central Texas College",
+      "date": "2022-2024"
+    },
+    {
+      "title": "Bachelor's in Computer Science",
+      "org": "Texas A&M University-Central Texas",
+      "date": "2023–Present"
+    },
+    {
+      "title": "Software Developer Intern",
+      "org": "Trideum",
+      "date": "2025–Present",
+      "details": "Develop and test software to support government projects."
+    }
+  ]
+}
