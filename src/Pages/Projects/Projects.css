@@ -1,0 +1,237 @@
+.right-split {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-page {
+  height: calc(100vh - 75px);
+}
+
+.landing-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  color: white;
+  margin-left: 30%;
+  font-size: 30px;
+}
+
+.letter {
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.letter:hover {
+  transform: translateY(-5px) scale(1.2);
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.grow-on-load {
+  animation: grow 1.5s ease-out forwards;
+}
+
+.right-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60%;
+  transform: skewX(-18deg);
+  transform-origin: top left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(35deg, #ff3131, rgb(94, 18, 104));
+}
+
+@media (max-width: 900px) {
+  .right-split {
+    flex-direction: column;
+  }
+
+  .left-block {
+    transform: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .landing-text-wrapper {
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .right-block {
+    display: none;
+  }
+}
+
+/* Container for the whole project section */
+.projects-container {
+  padding: 40px 10%;
+  color: white;
+}
+
+.projects-container h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  border-bottom: 2px solid #ff3131;
+  display: inline-block;
+}
+
+/* Each row created by your createGrid function */
+.project-row {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  margin-bottom: 20px; /* Space between rows */
+  width: 100%;
+}
+
+/* Individual Project Card Styling */
+.project-card {
+  flex: 1; /* Makes cards in the same row equal width */
+  background: rgba(255, 255, 255, 0.05); /* Subtle transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  text-decoration: none; /* Remove hyperlink underline */
+  color: inherit;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 120px;
+}
+
+/* Card Hover Effect */
+.project-card:hover {
+  transform: translateY(-8px); /* Lift up effect */
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: #ff3131;
+}
+
+/* Text styling inside the card */
+.project-card strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.project-card span {
+  font-size: 0.9rem;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive: Stack cards on small screens */
+@media (max-width: 768px) {
+  .project-row {
+    flex-direction: column;
+  }
+}
+
+/* Container for the filter tools */
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 20px 10%;
+  margin-left: 0px;
+  max-width: 300px; /* Limits the width so it doesn't stretch too far */
+}
+
+.filter-label {
+  color: #ccc;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Wrapper to position the custom arrow */
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.custom-select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.07); /* Semi-transparent glass look */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  appearance: none; /* Removes the default browser arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Hover & Focus States */
+.custom-select:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ff3131; /* Your theme red */
+}
+
+.custom-select:focus {
+  border-color: #ff3131;
+  box-shadow: 0 0 0 4px rgba(255, 49, 49, 0.2);
+}
+
+/* Styling the options dropdown (Note: limited styling possible here) */
+.custom-select option {
+  background-color: #1a1a1a; /* Dark background for the dropdown list */
+  color: white;
+  padding: 10px;
+}
+
+/* The custom arrow icon */
+.select-icon {
+  position: absolute;
+  right: 15px;
+  pointer-events: none; /* Allows clicks to pass through to the select */
+  color: #ff3131;
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Rotate arrow when select is active (Chrome only hack) */
+.select-wrapper:focus-within .select-icon {
+  transform: rotate(180deg);
+}
