@@ -49,7 +49,7 @@ import OracioImg from "../images/oracio.png";
 export const members: Member[] = [
   {
     name: "Amber Feeley",
-    role: Role.Director,
+    role: Role.Alumni,
     imageUrl: AmberImg,
     bio: "Director of OSCCCT.",
   },
@@ -61,7 +61,7 @@ export const members: Member[] = [
   },
   {
     name: "Dominic Burfict",
-    role: Role.Deputy,
+    role: Role.Alumni,
     imageUrl: DomImg,
     bio: "Deputy Director.",
   },
@@ -85,7 +85,7 @@ export const members: Member[] = [
   },
   {
     name: "Lexie Cabading",
-    role: Role.Member,
+    role: Role.Director,
     imageUrl: LexieImg,
     bio: "Community member.",
   },
